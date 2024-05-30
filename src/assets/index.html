@@ -62,8 +62,8 @@
     );
 
     function Card(props) {
-      return html`<div class="card hover:cursor-pointer">
-        <h2 class="card-title text-black text-center">${props.project.title}</h2>
+      return html`<div class="card">
+        <a class="card-title text-black text-center" href=${props.project.link}>${props.project.title}</a>
         <img src=${props.project.image} alt=${props.project.name} />
         </div> `;
     }
