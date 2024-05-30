@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: entry
+spec:
+  serviceName: "entry"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: entry
+  template:
+    metadata:
+      labels:
+        app: entry
+    spec:
+      containers:
+      - name: entry
+        image: ghcr.io/aitorru/kuberentry-back-2af35062ad896f19547fa319802f7a1db3e18d3d:trunk
+        ports:
+        - containerPort: 3000
