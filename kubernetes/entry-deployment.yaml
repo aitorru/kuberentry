@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: entry
-        image: ghcr.io/aitorru/kuberentry-back-2af35062ad896f19547fa319802f7a1db3e18d3d:trunk
+        image: ghcr.io/aitorru/kuberentry-back:9712335517
         ports:
         - containerPort: 3000
